@@ -3,12 +3,12 @@
 # Edit at https://www.gitignore.io/?templates=laravel
 
 ### Laravel ###
-/vendor/
+larasistem/vendor
 node_modules/
 npm-debug.log
 yarn-error.log
 
-# Laravel 4 specific
+
 larasistem/bootstrap/compiled.php
 larasistem/app/storage/
 
