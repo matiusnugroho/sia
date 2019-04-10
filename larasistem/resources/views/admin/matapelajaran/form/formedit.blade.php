@@ -1,0 +1,44 @@
+<div class="ibox-content">
+                            <form method="get" class="form-horizontal">
+                                <div class="form-group"><label class="col-sm-2 control-label">Username</label>
+
+                                    <div class="col-sm-10">
+                                    {!! Form::text('username', null, ['class' => 'form-control']) !!}
+                                    </div>
+                                </div>
+
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Email</label>
+                                    <div class="col-sm-10">
+                                    {!! Form::text('email', null, ['class' => 'form-control']) !!}
+                                    </div>
+                                </div>
+
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Role</label>
+
+                                    <div class="col-sm-10">
+                                    {!!Form::select('role',$role,$user->role,['class' => 'form-control'])!!}
+                                </div>
+                                </div>
+
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Password</label>
+                                    <div class="col-sm-10">
+                                    {!! Form::text('password', null, ['class' => 'form-control']) !!}
+                                    </div>
+                                </div>
+
+                                
+                                </div>
+                                <center>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <div class="col-sm-4 col-sm-offset-2">
+                                        <button class="btn btn-white" a href="{{url('/user')}}">Cancel</button>
+                                        <button class="btn btn-primary" type="submit">Save changes</button>
+                                    </div>
+                                </div>
+                                </center>
+                            </form>
+                        </div>
